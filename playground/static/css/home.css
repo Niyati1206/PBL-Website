@@ -1,1065 +1,218 @@
-
-html {
-	font-size:62.5%;
-}
-* {
-	margin: 0;
-	padding: 0;
-}
-ul, li {
-	list-style: none;
-}
-input {
-	border: none;
-}
+/* General Styles */
 body {
-  width: 145.7rem;
-}.home-XvE {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-}
-.home-XvE .auto-group-aeax-HPc {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  padding: 0rem 0.395rem 12.6rem 0.395rem;
-  width: 100%;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
+  padding: 1rem 2rem;
+  background-color: #004080;
+  color: white;
 }
-.home-XvE .auto-group-aeax-HPc .header--o74 {
-  margin: 0rem 0.909rem 3.558rem 0rem;
-  box-sizing: border-box;
-  padding: 0.521rem 9.8rem 0.521rem 9.8rem;
-  height: 5.8424rem;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  align-items: center;
-  border: solid 0.1rem #dee4ec;
-  background-color: #ffffff;
-  flex-shrink: 0;
+
+.header .logo img {
+  max-width: 50px;
 }
-.home-XvE .auto-group-aeax-HPc .header--o74 .logo-VEn {
-  margin-right: 32.75rem;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
+
+.header .logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
 }
-.home-XvE .auto-group-aeax-HPc .header--o74 .logo-VEn .image-1-Ey4 {
-  margin-right: 1.3rem;
-  width: 4.6rem;
-  height: 4.6rem;
-  object-fit: cover;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .header--o74 .logo-VEn .lab-tracker-Ari {
-  max-width: 8.1rem;
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.015rem;
-  color: #00698f;
-  font-family: Segoe UI, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .header--o74 .navigation-gKG {
-  margin: 1.2rem 32.55rem 1.2rem 0rem;
-  height: calc(100% - 2.4rem);
-  display: flex;
-  column-gap: 4.8rem;
-  align-items: center;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .header--o74 .navigation-gKG .home-bBL {
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.05rem;
-  color: #0081af;
-  font-family: DM Sans, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .header--o74 .navigation-gKG .about-hkA {
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.05rem;
-  color: #0081af;
-  font-family: DM Sans, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .header--o74 .navigation-gKG .contact-ddp {
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.05rem;
-  color: #0081af;
-  font-family: DM Sans, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .header--o74 .auto-layout-horizontal-Mpi {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .header--o74 .auto-layout-horizontal-Mpi .styleoutlined-WBp {
-  margin-right: 1.6rem;
-  width: 9.9rem;
-  height: 100%;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.05rem;
-  color: #0081af;
-  font-family: DM Sans, 'Source Sans Pro';
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: solid 0.1rem #0081af;
-  box-sizing: border-box;
-  border-radius: 3rem;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .header--o74 .auto-layout-horizontal-Mpi .stylefilled-aBg {
-  width: 8.2rem;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.05rem;
-  color: #ffffff;
-  font-family: DM Sans, 'Source Sans Pro';
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: solid 0.1rem #0081af;
-  box-sizing: border-box;
-  background-color: #0081af;
-  border-radius: 3rem;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY {
-  margin: 0rem 3.31rem 2.273rem 0rem;
-  width: 139.11rem;
-  height: 113.0271rem;
-  position: relative;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U {
-  width: 139.11rem;
-  height: 56.3263rem;
-  position: absolute;
-  left: 0;
-  top: 56.7008rem;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-fx8p-2Sz {
-  box-sizing: border-box;
-  padding: 0rem 45.215rem 7.542rem 44.195rem;
-  width: 100%;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-fx8p-2Sz .how-lab-tracker-helps-wpr {
-  margin-bottom: 2.3573rem;
-  display: flex;
-  font-size: 4.8rem;
+
+.header .navigation a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
   font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: -0.096rem;
-  color: #0081af;
-  font-family: Plus Jakarta Sans, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
 }
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-fx8p-2Sz .simplify-equipment-management-for-a-more-productive-laboratory-T2W {
-  margin-left: 2.1663rem;
-  max-width: 47.1rem;
+
+.header .navigation a:hover {
+  text-decoration: underline;
+}
+
+.header .auth-buttons a {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.header .auth-buttons .signup-button {
+  background-color: white;
+  color: #004080;
+  border: 1px solid #004080;
+}
+
+.header .auth-buttons .login-button {
+  background-color: #004080;
+  color: white;
+  border: 1px solid white;
+}
+
+/* Hero Section */
+.hero {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #003c52;
-  font-family: Plus Jakarta Sans, 'Source Sans Pro';
-  flex-shrink: 0;
+  padding: 2rem;
+  background-color: #e6f7ff;
 }
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-dtbu-XYA {
-  width: 100%;
-  height: 33.8271rem;
-  position: relative;
-  flex-shrink: 0;
+
+.hero .hero-content {
+  max-width: 50%;
 }
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-dtbu-XYA .inventory-Gke {
-  width: 39.6rem;
-  height: 33.779rem;
-  position: absolute;
-  left: 0;
-  top: 0.0481rem;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #004080;
 }
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-dtbu-XYA .inventory-Gke .auto-group-xzew-CPQ {
-  margin: 0rem 14.348rem 5.013rem 14.498rem;
-  box-sizing: border-box;
-  padding: 2.852rem 1.762rem 2.539rem 1.762rem;
-  width: calc(100% - 28.8459rem);
-  background-color: rgba(0, 129, 175, 0.1400000006);
-  border-radius: 3rem;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-dtbu-XYA .inventory-Gke .auto-group-xzew-CPQ .image-2-6Dt {
-  width: 5.4rem;
-  height: 5.8rem;
-  object-fit: cover;
-  vertical-align: top;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-dtbu-XYA .inventory-Gke .inventory-management-bgS {
-  margin-bottom: 4.1744rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.4rem;
-  font-weight: 600;
-  line-height: 1.5;
-  letter-spacing: -0.048rem;
-  color: #003c52;
-  font-family: Plus Jakarta Sans, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-dtbu-XYA .inventory-Gke .highlight-the-core-service-of-your-website-which-is-the-efficient-management-of-laboratory-equipment-inventory-explain-how-the-system-allows-users-to-add-track-and-organize-their-equipment-inventory-in-a-centralized-database-hUa {
-  max-width: 39.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.75;
-  letter-spacing: -0.028rem;
-  color: #003c52;
-  font-family: Plus Jakarta Sans, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-dtbu-XYA .equip-KVx {
-  width: 39.8rem;
-  height: 32.6455rem;
-  position: absolute;
-  left: 50.5956rem;
-  top: 0;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-dtbu-XYA .equip-KVx .auto-group-bhzj-3gr {
-  margin: 0rem 13.782rem 4.513rem 15.264rem;
-  width: calc(100% - 29.0459rem);
-  height: 11.1912rem;
-  position: relative;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-dtbu-XYA .equip-KVx .auto-group-bhzj-3gr .image-3-Z9Q {
-  width: 6.8rem;
-  height: 6.8rem;
-  position: absolute;
-  left: 2rem;
-  top: 2.4rem;
-  object-fit: cover;
-  vertical-align: top;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-dtbu-XYA .equip-KVx .auto-group-bhzj-3gr .rectangle-23787-fy8 {
-  width: 10.7541rem;
-  height: 11.1912rem;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 129, 175, 0.1400000006);
-  border-radius: 3rem;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-dtbu-XYA .equip-KVx .equipment-tracking-and-borrowing-zEi {
-  margin: 0rem 0rem 3.541rem 0.521rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.4rem;
-  font-weight: 600;
-  line-height: 1.5;
-  letter-spacing: -0.048rem;
-  color: #003c52;
-  font-family: Plus Jakarta Sans, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-dtbu-XYA .equip-KVx .describe-the-functionality-that-enables-users-to-track-the-status-and-location-of-equipment-within-the-laboratory-emphasize-the-ability-to-borrow-equipment-record-borrower-information-and-set-return-deadlines-fbk {
-  max-width: 39.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.75;
-  letter-spacing: -0.028rem;
-  color: #003c52;
-  font-family: Plus Jakarta Sans, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-dtbu-XYA .notifs-Ht2 {
-  width: 44.1rem;
-  height: 31.8rem;
-  position: absolute;
-  left: 95.01rem;
-  top: 0.5rem;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-dtbu-XYA .notifs-Ht2 .auto-group-goth-1p2 {
-  margin: 0rem 12.696rem 3.717rem 20.65rem;
-  width: calc(100% - 33.3459rem);
-  height: 11.1912rem;
-  position: relative;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-dtbu-XYA .notifs-Ht2 .auto-group-goth-1p2 .image-4-jEE {
-  width: 5.9rem;
-  height: 6.4rem;
-  position: absolute;
-  left: 2rem;
-  top: 2.4rem;
-  object-fit: cover;
-  vertical-align: top;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-dtbu-XYA .notifs-Ht2 .auto-group-goth-1p2 .rectangle-23787-TR8 {
-  width: 10.7541rem;
-  height: 11.1912rem;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 129, 175, 0.1400000006);
-  border-radius: 3rem;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-dtbu-XYA .notifs-Ht2 .notifications-and-alerts-Bc2 {
-  margin: 0rem 0rem 3.492rem 9.822rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.4rem;
-  font-weight: 600;
-  line-height: 1.5;
-  letter-spacing: -0.048rem;
-  color: #003c52;
-  font-family: Plus Jakarta Sans, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-dtbu-XYA .notifs-Ht2 .highlight-the-systems-feature-of-sending-automated-notifications-and-alerts-to-borrowers-regarding-upcoming-return-deadlines-explain-how-this-helps-in-ensuring-timely-returns-and-minimizing-the-risk-of-equipment-loss-or-delay-fGJ {
-  max-width: 44.1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.75;
-  letter-spacing: -0.028rem;
-  color: #1a202c;
-  font-family: Plus Jakarta Sans, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-dtbu-XYA .vector-5-sNN {
-  width: 35.9749rem;
-  height: 8.7908rem;
-  position: absolute;
-  left: 27.7885rem;
-  top: 0.9868rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .how-it-helps-u7U .auto-group-dtbu-XYA .vector-6-zC6 {
-  width: 35.9749rem;
-  height: 8.7908rem;
-  position: absolute;
-  left: 78.2491rem;
-  top: 0.9868rem;
-  object-fit: contain;
-  vertical-align: top;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .hero-i86 {
-  width: 114.9rem;
-  height: 57.2rem;
-  position: absolute;
-  left: 13.16rem;
-  top: 0;
-  display: flex;
-  align-items: center;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .hero-i86 .chemistrylab-bro-removebg-preview-1-qTc {
-  margin-right: 0.7rem;
-  width: 72.6rem;
-  height: 57.2rem;
-  object-fit: cover;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .hero-i86 .auto-group-jspm-Z8i {
-  margin: 21rem 0rem 11.2rem 0rem;
-  width: 41.6rem;
-  height: calc(100% - 32.2rem);
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .hero-i86 .auto-group-jspm-Z8i .auto-layout-vertical-574 {
-  margin-bottom: 2.8rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .hero-i86 .auto-group-jspm-Z8i .auto-layout-vertical-574 .lab-tracker-d8a {
-  margin-bottom: 1.6rem;
-  font-size: 6rem;
-  font-weight: 700;
-  line-height: 1.2666666667;
-  letter-spacing: 0.05rem;
-  color: #486283;
-  font-family: DM Sans, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .hero-i86 .auto-group-jspm-Z8i .auto-layout-vertical-574 .track-borrow-and-keep-a-record-of-all-your-lab-equipment-in-one-place-LYn {
-  max-width: 41.6rem;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.6;
-  letter-spacing: 0.05rem;
-  color: #8ba2bf;
-  font-family: DM Sans, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .hero-i86 .auto-group-jspm-Z8i .auto-layout-vertical-574 .track-borrow-and-keep-a-record-of-all-your-lab-equipment-in-one-place-LYn .track-borrow-and-keep-a-record-of-all-your-lab-equipment-in-one-place-LYn-sub-0 {
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.6;
-  letter-spacing: 0.05rem;
-  color: #8ba2bf;
-  font-family: DM Sans, 'Source Sans Pro';
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .hero-i86 .auto-group-jspm-Z8i .auto-layout-vertical-574 .track-borrow-and-keep-a-record-of-all-your-lab-equipment-in-one-place-LYn .track-borrow-and-keep-a-record-of-all-your-lab-equipment-in-one-place-LYn-sub-1 {
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .hero-i86 .auto-group-jspm-Z8i .main-button-pMU {
-  margin-right: 20rem;
-  box-sizing: border-box;
-  padding: 2.4rem 3.825rem 2.4rem 3.6rem;
-  width: calc(100% - 20rem);
-  height: 6.6rem;
-  display: flex;
-  align-items: center;
-  background-color: #eaba6b;
-  border-radius: 4rem;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .hero-i86 .auto-group-jspm-Z8i .main-button-pMU .auto-group-dyph-7rN {
-  margin-right: 1.825rem;
-  width: 11rem;
-  height: 100%;
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 0.75;
-  color: #ffffff;
-  font-family: Segoe UI, 'Source Sans Pro';
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-apsw-noY .hero-i86 .auto-group-jspm-Z8i .main-button-pMU .line-rounded-arrow-right-1wk {
-  margin-bottom: 0rem;
-  width: 1.35rem;
-  height: 1.2691rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-4auh-WtW {
-  margin: 0rem 8.505rem 0rem 11.805rem;
-  width: calc(100% - 20.3093rem);
-  height: 54.4rem;
-  position: relative;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-4auh-WtW .team-work-rafiki-1-Rka {
-  width: 66.1rem;
-  height: 54.4rem;
-  position: absolute;
-  left: 58.5rem;
-  top: 0;
-  object-fit: cover;
-  vertical-align: top;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-4auh-WtW .abou-9Rg {
-  width: 65.8rem;
-  height: 28.4rem;
-  position: absolute;
-  left: 0;
-  top: 13rem;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-4auh-WtW .abou-9Rg .about-lab-tracker-fev {
-  margin-bottom: 1.6rem;
-  font-size: 6rem;
-  font-weight: 700;
-  line-height: 1.2666666667;
-  letter-spacing: 0.05rem;
-  color: #486283;
-  font-family: Segoe UI, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.home-XvE .auto-group-aeax-HPc .auto-group-4auh-WtW .abou-9Rg .welcome-to-lab-tracker-where-from-small-scale-research-facilities-to-large-academic-institutions-our-inventory-system-is-scalable-and-adaptable-to-any-laboratory-setting-by-providing-a-centralized-hub-for-equipment-data-and-borrower-information-we-aim-to-optimize-resource-utilization-reduce-downtime-and-enhance-overall-efficiency-P58 {
-  max-width: 65.8rem;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.6;
-  letter-spacing: 0.05rem;
-  color: #8ba2bf;
-  font-family: DM Sans, 'Source Sans Pro';
-}
-.home-XvE .auto-group-lwh9-kJz {
-  margin-bottom: 5.9rem;
-  width: 100%;
-  height: 52rem;
-  position: relative;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .travel-head-giS {
-  width: 145.7rem;
-  height: 39.8rem;
-  position: absolute;
-  left: 0;
-  top: 6.5rem;
-  overflow: hidden;
-  background-color: #0081af;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev {
-  box-sizing: border-box;
-  padding: 1.2rem 4.7rem 2.1rem 4.7rem;
-  width: 109.6rem;
-  height: 52rem;
-  position: absolute;
-  left: 17.9rem;
-  top: 0;
-  overflow: hidden;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  border: dashed 0.2rem #79858f;
-  background-color: #ffffff;
-  border-radius: 2.4rem;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .header-gM4 {
-  margin: 0rem 24.2rem 2.3rem 0rem;
-  box-sizing: border-box;
-  padding: 0.25rem 2.4rem;
-  width: 76rem;
-  overflow: hidden;
-  position: relative;
-  font-size: 6rem;
-  font-weight: 700;
-  line-height: 1.2666666667;
-  letter-spacing: 0.05rem;
-  color: #0081af;
-  font-family: Segoe UI, 'Source Sans Pro';
-  white-space: nowrap;
-  background-color: #ffffff;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ {
-  margin: 0rem 26.8rem 3.7rem 0rem;
-  width: 57rem;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-gcpb-EWz {
-  box-sizing: border-box;
-  padding-bottom: 0.6rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-gcpb-EWz .list-item-ZJN {
-  margin: 0rem 17.8rem 1.8rem 0rem;
-  width: calc(100% - 17.8rem);
-  height: 2.4rem;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-gcpb-EWz .list-item-ZJN .number-g86 {
-  margin: 0.2rem 0.8rem 0.2rem 0rem;
-  width: 2rem;
-  height: calc(100% - 0.4rem);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.hero p {
   font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1.6666666667;
-  color: #ffffff;
-  font-family: Roboto, 'Source Sans Pro';
-  white-space: nowrap;
-  background-color: #003c52;
-  border-radius: 4rem;
-  flex-shrink: 0;
+  margin-bottom: 2rem;
+  color: #333;
 }
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-gcpb-EWz .list-item-ZJN .sign-up-or-log-in-to-your-account-as-a-user-or-admin-91g {
-  display: flex;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #003c52;
-  font-family: Roboto, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
+
+.hero .main-button {
+  background-color: #004080;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1rem;
 }
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-gcpb-EWz .list-item-48e {
-  margin: 0rem 8.6rem 0.4rem 0rem;
-  width: calc(100% - 8.6rem);
-  display: flex;
-  align-items: flex-start;
-  flex-shrink: 0;
+
+.hero img {
+  max-width: 40%;
+  border-radius: 8px;
 }
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-gcpb-EWz .list-item-48e .number-AhU {
-  margin-right: 0.8rem;
-  width: 2rem;
-  height: 2rem;
+
+/* Features Section */
+.features {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #004080;
+}
+
+.features .feature {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1.6666666667;
-  color: #ffffff;
-  font-family: Roboto, 'Source Sans Pro';
-  white-space: nowrap;
-  background-color: #003c52;
-  border-radius: 4rem;
-  flex-shrink: 0;
+  margin-bottom: 2rem;
 }
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-gcpb-EWz .list-item-48e .explore-the-dashboard-and-familiarize-yourself-with-the-features-r4W {
+
+.features .feature img {
+  max-width: 150px;
+  margin-right: 1rem;
+}
+
+.features .feature h3 {
+  font-size: 1.5rem;
+  color: #004080;
+}
+
+.features .feature p {
+  margin: 0;
+}
+
+/* About Section */
+.about {
+  padding: 2rem;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+  color: #004080;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* How It Works Section */
+.how-it-works {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.how-it-works h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #004080;
+}
+
+.how-it-works ol {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+}
+
+.how-it-works ol li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #004080;
+  color: white;
+  padding: 1.5rem 2rem;
+}
+
+.footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer .footer-logo img {
+  max-width: 50px;
+}
+
+.footer .footer-logo h1 {
+  margin: 0;
+}
+
+.footer .footer-navigation a {
+  margin: 0 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.footer .footer-navigation a:hover {
+  text-decoration: underline;
+}
+
+.footer .social-media a {
+  margin: 0 0.5rem;
+}
+
+.footer .social-media img {
+  max-width: 30px;
+}
+
+.footer .footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
   margin-top: 1rem;
-  display: flex;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #003c52;
-  font-family: Roboto, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-gcpb-EWz .list-item-jtz {
-  margin: 0rem 11.7rem 1.6rem 0rem;
-  width: calc(100% - 11.7rem);
-  height: 2.4rem;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-gcpb-EWz .list-item-jtz .number-rii {
-  margin: 0.2rem 0.8rem 0.2rem 0rem;
-  width: 2rem;
-  height: calc(100% - 0.4rem);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1.6666666667;
-  color: #ffffff;
-  font-family: Roboto, 'Source Sans Pro';
-  white-space: nowrap;
-  background-color: #003c52;
-  border-radius: 4rem;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-gcpb-EWz .list-item-jtz .as-an-admin-add-equipment-by-providing-necessary-details-WYN {
-  display: flex;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #003c52;
-  font-family: Roboto, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-gcpb-EWz .list-item-RQS {
-  margin: 0rem 20.7rem 0.4rem 0rem;
-  width: calc(100% - 20.7rem);
-  display: flex;
-  align-items: flex-start;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-gcpb-EWz .list-item-RQS .number-MJ6 {
-  margin-right: 0.8rem;
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1.6666666667;
-  color: #ffffff;
-  font-family: Roboto, 'Source Sans Pro';
-  white-space: nowrap;
-  background-color: #003c52;
-  border-radius: 4rem;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-gcpb-EWz .list-item-RQS .organize-equipment-using-categories-and-tags-e2J {
-  margin-top: 1rem;
-  display: flex;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #003c52;
-  font-family: Roboto, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-gcpb-EWz .list-item-9Dx {
-  margin-right: 16.5rem;
-  width: calc(100% - 16.5rem);
-  display: flex;
-  align-items: flex-start;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-gcpb-EWz .list-item-9Dx .number-HLA {
-  margin-right: 0.8rem;
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1.6666666667;
-  color: #ffffff;
-  font-family: Roboto, 'Source Sans Pro';
-  white-space: nowrap;
-  background-color: #003c52;
-  border-radius: 4rem;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-gcpb-EWz .list-item-9Dx .track-equipment-by-searching-for-its-name-or-details-Y1C {
-  margin-top: 1rem;
-  display: flex;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #003c52;
-  font-family: Roboto, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .list-item-ngE {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .list-item-ngE .number-jbU {
-  margin-right: 0.8rem;
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1.6666666667;
-  color: #ffffff;
-  font-family: Roboto, 'Source Sans Pro';
-  white-space: nowrap;
-  background-color: #003c52;
-  border-radius: 4rem;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .list-item-ngE .as-a-user-borrow-equipment-by-selecting-items-and-setting-return-deadlines-DFk {
-  margin-top: 1.15rem;
-  display: flex;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #003c52;
-  font-family: Roboto, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-ov7u-JHC {
-  box-sizing: border-box;
-  padding-top: 0.25rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-ov7u-JHC .list-item-EwY {
-  margin: 0rem 16.3rem 1.8rem 0rem;
-  width: calc(100% - 16.3rem);
-  height: 2.4rem;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-ov7u-JHC .list-item-EwY .number-x6r {
-  margin: 0.2rem 0.8rem 0.2rem 0rem;
-  width: 2rem;
-  height: calc(100% - 0.4rem);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1.6666666667;
-  color: #ffffff;
-  font-family: Roboto, 'Source Sans Pro';
-  white-space: nowrap;
-  background-color: #003c52;
-  border-radius: 4rem;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-ov7u-JHC .list-item-EwY .receive-automated-notifications-for-return-reminders-158 {
-  display: flex;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #003c52;
-  font-family: Roboto, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .list-vFQ .auto-group-ov7u-JHC .number-ikE {
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1.6666666667;
-  color: #ffffff;
-  font-family: Roboto, 'Source Sans Pro';
-  white-space: nowrap;
-  background-color: #003c52;
-  border-radius: 4rem;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .auto-group-r2fv-oWn {
-  margin: 0rem 9.5rem 0rem 13rem;
-  width: calc(100% - 22.5rem);
-  height: 4.8rem;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .auto-group-r2fv-oWn .stylefilled-Wvz {
-  margin-right: 9.3rem;
-  width: 34.2rem;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0.05rem;
-  color: #ffffff;
-  font-family: DM Sans, 'Source Sans Pro';
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: solid 0.1rem #eaba6b;
-  box-sizing: border-box;
-  background-color: #eaba6b;
-  border-radius: 5rem;
-  flex-shrink: 0;
-}
-.home-XvE .auto-group-lwh9-kJz .how-it-works-1Ev .auto-group-r2fv-oWn .buton2-MAv {
-  width: 34.2rem;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0.05rem;
-  color: #486283;
-  font-family: DM Sans, 'Source Sans Pro';
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: solid 0.1rem #486283;
-  box-sizing: border-box;
-  border-radius: 5rem;
-  flex-shrink: 0;
-}
-.home-XvE .footer-kTx {
-  box-sizing: border-box;
-  padding: 5.5rem 11rem 4.4rem 6.7rem;
-  width: 144rem;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  flex-shrink: 0;
-}
-.home-XvE .footer-kTx .auto-group-kzqq-GBQ {
-  margin: 0rem 1.7rem 4.8rem 0rem;
-  width: calc(100% - 1.7rem);
-  height: 8.7rem;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-.home-XvE .footer-kTx .auto-group-kzqq-GBQ .logo-ybc {
-  height: 100%;
-  display: flex;
-  align-items: flex-start;
-  flex-shrink: 0;
-}
-.home-XvE .footer-kTx .auto-group-kzqq-GBQ .logo-ybc .image-1-jKt {
-  margin: 0.1rem 1.3rem 0rem 0rem;
-  width: 8.9rem;
-  height: 8.6rem;
-  object-fit: cover;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.home-XvE .footer-kTx .auto-group-kzqq-GBQ .logo-ybc .lab-tracker-3La {
-  max-width: 13.4rem;
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.015rem;
-  color: #00698f;
-  font-family: Segoe UI, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.home-XvE .footer-kTx .auto-group-kzqq-GBQ .auto-group-sy6f-Z42 {
-  box-sizing: border-box;
-  padding: 2.139rem 0rem 1.9rem 28.6rem;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-.home-XvE .footer-kTx .auto-group-kzqq-GBQ .auto-group-sy6f-Z42 .navigation-52N {
-  margin: 2.261rem 27.8rem 0rem 0rem;
-  display: flex;
-  column-gap: 4.8rem;
-  align-items: center;
-  flex-shrink: 0;
-}
-.home-XvE .footer-kTx .auto-group-kzqq-GBQ .auto-group-sy6f-Z42 .navigation-52N .home-zQE {
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.05rem;
-  color: #0081af;
-  font-family: DM Sans, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.home-XvE .footer-kTx .auto-group-kzqq-GBQ .auto-group-sy6f-Z42 .navigation-52N .about-un6 {
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.05rem;
-  color: #0081af;
-  font-family: DM Sans, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.home-XvE .footer-kTx .auto-group-kzqq-GBQ .auto-group-sy6f-Z42 .navigation-52N .contact-pu4 {
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.05rem;
-  color: #0081af;
-  font-family: DM Sans, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.home-XvE .footer-kTx .auto-group-kzqq-GBQ .auto-group-sy6f-Z42 .social-media-container-9Ae {
-  margin-bottom: 1.0607rem;
-  display: flex;
-  column-gap: 1.6rem;
-  align-items: center;
-  flex-shrink: 0;
-}
-.home-XvE .footer-kTx .auto-group-kzqq-GBQ .auto-group-sy6f-Z42 .social-media-container-9Ae .social-media-icon-square-facebook-GWA {
-  width: 3.6rem;
-  height: 3.6rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.home-XvE .footer-kTx .auto-group-kzqq-GBQ .auto-group-sy6f-Z42 .social-media-container-9Ae .social-media-icon-square-twitter-C8v {
-  width: 3.6rem;
-  height: 3.6rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.home-XvE .footer-kTx .auto-group-kzqq-GBQ .auto-group-sy6f-Z42 .social-media-container-9Ae .social-media-icon-square-instagram-isx {
-  width: 3.6rem;
-  height: 3.6rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.home-XvE .footer-kTx .auto-group-kzqq-GBQ .auto-group-sy6f-Z42 .social-media-container-9Ae .social-media-icon-square-linkedin-FN6 {
-  width: 3.6rem;
-  height: 3.6rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.home-XvE .footer-kTx .footer-botom-Nhc {
-  margin-left: 4.3rem;
-  box-sizing: border-box;
-  padding: 3.2rem 39.85rem 0rem 39.95rem;
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 1;
-  color: #0081af;
-  font-family: DM Sans, 'Source Sans Pro';
-  white-space: nowrap;
-  border-top: solid 0.1rem #0081af;
-  flex-shrink: 0;
 }

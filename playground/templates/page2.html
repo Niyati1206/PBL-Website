@@ -27,7 +27,7 @@
   font-size: 2.5rem;
   margin-left: 2rem;
   margin-bottom: 1rem;
-  color: #6b705c;
+  color: #486284;
   /* color: #8a6653; */
 }
 
@@ -258,68 +258,46 @@
         </nav>
         <hr style="margin: 0;" />
       </div>
-      <section class="hero">
-        <div class="hero-content">
-            <h2>AI Based</h2>
-            <h2>Paper Evaluator</h2>
-            <p>Track, borrow, and keep a record of all your lab equipment in one place.</p>
-            <a href="/get-started" class="main-button">Get Started</a>
-        </div>
-        <img src="../static/images/desktop computer-bro (1).svg" alt="Lab Management Illustration"
-            class="hero-image" />
-    </section>
-    <section id="about" class="about">
-      <img src="../static/images/grammar correction-rafiki.svg" alt="people" class="about-image">
-      <div class="about-content">
-          <h2>About AI Evaluator</h2>
-          <p>Welcome to Lab Tracker, where from small-scale research facilities to large academic institutions, our inventory system is scalable and adaptable to any laboratory setting. By providing a centralized hub for equipment data and borrower information, we aim to optimize resource utilization, reduce downtime, and enhance overall efficiency.</p>
-      </div>
-    </section>
+
+  
     <section class="evaluate-section">
       <div class="evaluate-container">
         <div class="blue-strip left"></div>
         <div class="blue-strip right"></div>
         <div class="evaluate-content">
-          <h1>Model Answer Key Upload</h1>
+          <h1>Student Answer Key Upload</h1>
           <form>
             <div>
-              <label for="name">Course code </label>
-              <input type="text" id="name" name="name" placeholder="Enter the course code">
+                <label for="name">Course code </label>
+                <input type="text" id="name" name="name" placeholder="Enter the course code">
+              </div>
+            <div>
+              <label for="name">Roll no.</label>
+              <input type="number" id="name" name="name" placeholder="Enter the roll no.">
             </div>
             <div>
-              <label for="name">Course name </label>
-              <input type="text" id="name" name="name" placeholder="Enter your course name">
+              <label for="name">Student name </label>
+              <input type="text" id="name" name="name" placeholder="Enter your student name">
             </div>  
             <div>
-              <label for="modelpdf">Section A model answer</label>
+              <label for="modelpdf">Section A student answer</label>
               <input type="file" accept=".pdf">
             </div>
             <div>
-              <label for="marks">Maximum marks for Section A </label>
-              <input type="number" id="marks" name="marks" placeholder="Enter max marks">
-            </div> 
-            <div>
-              <label for="modelpdf">Section B model answer</label>
+              <label for="modelpdf">Section B student answer</label>
               <input type="file" accept=".pdf">
             </div>
+ 
             <div>
-              <label for="marks">Maximum marks for Section B </label>
-              <input type="number" id="marks" name="marks" placeholder="Enter max marks">
-            </div> 
-            <div>
-              <label for="modelpdf">Section C model answer</label>
+              <label for="modelpdf">Section C student answer</label>
               <input type="file" accept=".pdf">
             </div>
-            <div>
-              <label for="marks">Maximum marks for Section C </label>
-              <input type="number" id="marks" name="marks" placeholder="Enter max marks">
-            </div> 
-            <button type="button" onclick="window.location.href='page2.html'">Submit</button>
+
+            <button type="submit">Evaluate</button>
           </form>
         </div>
       </div>
-    </section>      
- 
+    </section>    
   <footer class="footer">
     <div class="footer-top">
         <div class="footer-logo">
@@ -327,7 +305,7 @@
             <h1>AI based<br />Paper Evaluator</h1>
         </div>
         <div class="footer-navigation">
-            <a href="#home">Home</a>
+            <a href="home.html">Home</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </div>
