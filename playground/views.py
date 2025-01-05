@@ -1,7 +1,10 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
-from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-from django.contrib.auth import login, logout
+from django.contrib.auth import login, logout,authenticate
+from .forms import CustomUserCreationForm
+from playground.models import User
+from django.contrib import messages
+from django.contrib.auth.hashers import check_password
+
 # Create your views here.
 def say_hello(request):
     return render(request,'home.html')
@@ -11,26 +14,47 @@ def page2(request):
 
 def register_view(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
-        if form.is_valid():
-            user = form.save()
-            login(request, user)
-            return redirect('home')  # Assuming 'home' is your home page URL
-    else:
-        form = UserCreationForm()
-    return render(request, 'register.html', {'form': form})
+        # Fetch data from the form
+        full_name = request.POST.get('full_name')
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+        confirm_password = request.POST.get('confirm_password')
+
+            # Validate and save the data
+        if password != confirm_password:
+            messages.error(request, "Passwords do not match!")
+        else:
+            # Save user to the database
+            user = User(full_name=full_name, email=email, password=password)
+            user.save()
+            messages.success(request, "User registered successfully!")
+            return render(request,'login.html')  # Replace 'success_page' with your success URL
+
+    # Render the registration form
+    return render(request, 'register.html')
 
 
 def login_view(request):
     if request.method == 'POST':
-        form = AuthenticationForm(request, data=request.POST)
-        if form.is_valid():
-            user = form.get_user()
-            login(request, user)
-            return redirect('home')  # Redirect to home or another page after login
-    else:
-        form = AuthenticationForm()
-    return render(request, 'login.html', {'form': form})
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+
+        try:
+            # Fetch the user by email
+            user = User.objects.get(email=email)
+
+            # Check if the provided password matches the stored hashed password
+            if check_password(password, user.password):
+                # Password is correct, log the user in
+                request.session['user_id'] = user.id  # Store user ID in session or use Django's session mechanism
+                messages.success(request, "Login successful!")
+                return render(request,'home.html')  # Redirect to home page or another page after login
+            else:
+                messages.error(request, "Invalid password! Please try again.")
+        except User.DoesNotExist:
+            messages.error(request, "User not found! Please register first.")
+
+    return render(request, 'login.html')
 
 
 def logout_view(request):
