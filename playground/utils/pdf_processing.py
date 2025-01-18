@@ -35,3 +35,23 @@ def calculate_similarity(text1, text2):
     vectorizer = CountVectorizer().fit_transform([text1, text2])
     vectors = vectorizer.toarray()
     return cosine_similarity(vectors)[0][1] * 100  # Return as a percentage
+
+import io
+from google.cloud import vision
+
+def extract_text_from_pdf(pdf_file):
+    """Extract text from a PDF using Google Vision API."""
+    client = vision.ImageAnnotatorClient()
+
+    # Read the PDF file as bytes
+    pdf_bytes = pdf_file.read()
+
+    # Create a Google Vision document
+    document = vision.Image(content=pdf_bytes)
+
+    # Annotate the document for text detection
+    response = client.document_text_detection(image=document)
+
+    # Extract the text from the response
+    text = response.full_text_annotation.text
+    return text

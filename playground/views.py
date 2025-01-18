@@ -9,11 +9,17 @@ from django.http import HttpResponse
 from .utils.text_detection import detect_text
 from .utils.pdf_processing import format_text, convert_text_to_pdf, read_pdf_content, calculate_similarity
 import os
-
+from .models import Course
+from django.shortcuts import render
+from django.http import JsonResponse
+from .utils.vision import extract_text_from_pdf_direct
 
 # Create your views here.
 def say_hello(request):
     return render(request,'home.html')
+
+def success(request):
+    return render(request,'upload_success.html')
 
 def page2(request):
     return render(request,'page2.html')
@@ -68,7 +74,7 @@ def logout_view(request):
     return redirect('home')  # Redirect to home or another page after logout
 
 # Path to font for PDF creation
-FONT_PATH = r"C:\Users\sirim\PBL-Website\DejaVuSans.ttf"
+FONT_PATH = r"C:\Users\Niyati\Desktop\pbl1\PBL-Website\DejaVuSans.ttf"
 
 def image_to_pdf(request):
     if request.method == "POST" and request.FILES["image"]:
@@ -76,7 +82,7 @@ def image_to_pdf(request):
         image_path = f"uploaded_{image.name}"
 
         with open(image_path, "wb") as f:
-            f.write(image.read())
+            f.write(image.read())       
 
         # Text Detection
         raw_text = detect_text(image_path)
@@ -114,5 +120,38 @@ def pdf_comparison(request):
     return render(request, "pdf_comparison.html")
 
 
+from django.shortcuts import render, redirect
+from .forms import CourseForm
+from django.shortcuts import render
+from django.core.files.storage import default_storage
+from google.cloud import vision_v1 as vision
+from django.views.decorators.csrf import csrf_exempt
+from django.shortcuts import render, redirect
+from .forms import StudentAnswerForm
+from django.contrib import messages
+@csrf_exempt
+def upload_model_answer(request):
+    if request.method == 'POST':
+        form = CourseForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('student_answer_upload') #Redirect to the next step
+    else:
+        form = CourseForm()
 
+    return render(request, 'page2.html', {'form': form})
+
+def upload_student_answer(request):
+    if request.method == 'POST':
+        form = StudentAnswerForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Student answers uploaded successfully!")
+            return redirect('success') #Replace with the name of your success page
+        else:
+            messages.error(request, "Error uploading answers. Please check your inputs.")
+    else:
+        form = StudentAnswerForm()
+
+    return render(request, 'upload_success.html', {'form': form})
 

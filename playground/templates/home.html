@@ -281,44 +281,45 @@
         <div class="blue-strip right"></div>
         <div class="evaluate-content">
           <h1>Model Answer Key Upload</h1>
-          <form>
+          <form method="post" enctype="multipart/form-data"action="{% url 'upload_model_answer'%}">
+            {% csrf_token %}
             <div>
-              <label for="name">Course code </label>
-              <input type="text" id="name" name="name" placeholder="Enter the course code">
+              <label for="course_code">Course code</label>
+              <input type="text" id="course_code" name="course_code" placeholder="Enter the course code" required>
             </div>
             <div>
-              <label for="name">Course name </label>
-              <input type="text" id="name" name="name" placeholder="Enter your course name">
+              <label for="course_name">Course name</label>
+              <input type="text" id="course_name" name="course_name" placeholder="Enter your course name" required>
             </div>  
             <div>
-              <label for="modelpdf">Section A model answer</label>
-              <input type="file" accept=".pdf">
+              <label for="section_a">Section A model answer</label>
+              <input type="file" id="section_a" name="section_a_model_answer" accept=".pdf" required>
             </div>
             <div>
-              <label for="marks">Maximum marks for Section A </label>
-              <input type="number" id="marks" name="marks" placeholder="Enter max marks">
+              <label for="max_marks_a">Maximum marks for Section A</label>
+              <input type="number" id="max_marks_a" name="max_marks_a" placeholder="Enter max marks" required>
             </div> 
             <div>
-              <label for="modelpdf">Section B model answer</label>
-              <input type="file" accept=".pdf">
+              <label for="section_b">Section B model answer</label>
+              <input type="file" id="section_b" name="section_b_model_answer" accept=".pdf" required>
             </div>
             <div>
-              <label for="marks">Maximum marks for Section B </label>
-              <input type="number" id="marks" name="marks" placeholder="Enter max marks">
+              <label for="max_marks_b">Maximum marks for Section B</label>
+              <input type="number" id="max_marks_b" name="max_marks_b" placeholder="Enter max marks" required>
             </div> 
             <div>
-              <label for="modelpdf">Section C model answer</label>
-              <input type="file" accept=".pdf">
+              <label for="section_c">Section C model answer</label>
+              <input type="file" id="section_c" name="section_c_model_answer" accept=".pdf" required>
             </div>
             <div>
-              <label for="marks">Maximum marks for Section C </label>
-              <input type="number" id="marks" name="marks" placeholder="Enter max marks">
+              <label for="max_marks_c">Maximum marks for Section C</label>
+              <input type="number" id="max_marks_c" name="max_marks_c" placeholder="Enter max marks" required>
             </div> 
-            <button type="button" onclick="window.location.href='page2.html'">Submit</button>
+            <button type="submit">Submit</button>
           </form>
         </div>
       </div>
-    </section>      
+    </section>
  
   <footer class="footer">
     <div class="footer-top">

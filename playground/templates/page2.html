@@ -266,31 +266,32 @@
         <div class="blue-strip right"></div>
         <div class="evaluate-content">
           <h1>Student Answer Key Upload</h1>
-          <form>
+          <form method="post" enctype="multipart/form-data" action="{% url 'student_answer_upload' %}">
+            {% csrf_token %}
             <div>
                 <label for="name">Course code </label>
-                <input type="text" id="name" name="name" placeholder="Enter the course code">
+                <input type="text" id="course_code" name="course_code" placeholder="Enter the course code">
               </div>
             <div>
               <label for="name">Roll no.</label>
-              <input type="number" id="name" name="name" placeholder="Enter the roll no.">
+              <input type="number" id="roll_number" name="roll_number" placeholder="Enter the roll no.">
             </div>
             <div>
               <label for="name">Student name </label>
-              <input type="text" id="name" name="name" placeholder="Enter your student name">
+              <input type="text" id="student_name" name="student_name" placeholder="Enter your student name">
             </div>  
             <div>
               <label for="modelpdf">Section A student answer</label>
-              <input type="file" accept=".pdf">
+              <input type="file" id="section_a_answer" name="section_a_answer" accept=".pdf">
             </div>
             <div>
               <label for="modelpdf">Section B student answer</label>
-              <input type="file" accept=".pdf">
+              <input type="file" id="section_b_answer" name="section_b_answer"  accept=".pdf">
             </div>
  
             <div>
               <label for="modelpdf">Section C student answer</label>
-              <input type="file" accept=".pdf">
+              <input type="file" id="section_c_answer" name="section_c_answer" accept=".pdf">
             </div>
 
             <button type="submit">Evaluate</button>
